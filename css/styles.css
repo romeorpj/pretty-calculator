@@ -1,0 +1,22 @@
+.calculator{
+    width: 300px;
+    height: 645px;
+    border: black solid 1px;
+    border-radius: 25px;
+    padding: 25px;
+    background-image: radial-gradient(at top right, #f2ecfa 8%,#f5f0fa 12%,#f7f6f9 80%);
+    position: relative;
+    /*background-color: #f8f7f8;*/
+}
+
+h1{
+    color: var(--dark-purp);
+    font-weight: 300;
+    letter-spacing: .89px;
+    font-size: 2rem;
+    line-height: 2.3rem;
+}
+h1 span{
+    font-weight: 500;
+    font-size: 2.4rem;
+}
