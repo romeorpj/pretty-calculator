@@ -1,7 +1,51 @@
 svg{
-    width: 500px;
+    width: 405px;
     position: relative ;
-    left: -50%;
-    top: -110px;
+    left: -30%;
+    top: -160px;
 }
 
+#hanging-boot{
+    animation: swing 1.2s ease-in-out infinite alternate;
+    transform-origin: top right;
+    transform-box: fill-box;
+}
+
+@keyframes swing {
+    from{
+        transform: rotate(3deg);
+    }
+    to{
+        transform: rotate(-9deg);
+    }
+}
+
+#left-plant{
+    animation: sway1 1.2s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes sway1 {
+    from{
+        transform: rotate(1.5deg);
+    }
+    to{
+        transform: rotate(-1.5deg);
+    }
+}
+
+#right-plant{
+    animation: sway1 1s 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes sway1 {
+    from{
+        transform: rotate(1.5deg);
+    }
+    to{
+        transform: rotate(-1.5deg);
+    }
+}
