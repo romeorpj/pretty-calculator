@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="css/utils.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/svg.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>Pretty Calc</title>
 </head>
 <body>
@@ -133,40 +135,36 @@
             </defs>
         </svg>
         <main>
-            <div class="prev_calculations"></div>
-            <input type="text" id="curr_calculation">
-            <div id="num_grid">
+            <input type="text" id="curr_calculation" class="input-field" placeholder=0>
+            <div class="num_grid">
                 <!--            Row 1-->
-                <div id="clear"><p>clr</p></div>
-                <div id="delete"><p><i class="fa-solid fa-arrow-left"></i></p></div>
-<!--                <div id="pos_neg"><sup>+</sup>-->
-<!--                    <p>/</p><sub>-</sub></div>-->
-<!--                <div id="pos_neg">+-</div>-->
-                <div id="divide"><p>/</p></div>
+                <button type="button" id="clear" class="top-operators btn">clr</button>
+                <button type="button" id="delete" class="top-operators"><i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button type="button" id="divide" class="operator btn">/</button>
                 <!--            Row 2-->
-                <div id="seven"><p>7</p></div>
-                <div id="eight"><p>8</p></div>
-                <div id="nine"><p>9</p></div>
-                <div id="multiply"><p>x</p></div>
+                <button type="button" id="seven" class="num-btn" value="7">7</button>
+                <button type="button" id="eight" class="num-btn" value="8">8</button>
+                <button type="button" id="nine" class="num-btn" value="9">9</button>
+                <button type="button" id="multiply btn" class="operator">x</button>
                 <!--            Row 3-->
-                <div id="four"><p>4</p></div>
-                <div id="five"><p>5</p></div>
-                <div id="six"><p>6</p></div>
-                <div id="subtract"><p>-</p></div>
+                <button type="button" id="four" class="num-btn" value="4">4</button>
+                <button type="button" id="five" class="num-btn" value="5">5</button>
+                <button type="button" id="six" class="num-btn" value="6">6</button>
+                <button type="button" id="subtract btn" class="operator">-</button>
                 <!--            Row 4-->
-                <div id="one"><p>1</p></div>
-                <div id="two"><p>2</p></div>
-                <div id="three"><p>3</p></div>
-                <div id="plus"><p>+</p></div>
+                <button type="button" id="one" class="num-btn" value="1">1</button>
+                <button type="button" id="two" class="num-btn" value="2">2</button>
+                <button type="button" id="three" class="num-btn" value="3">3</button>
+                <button type="button" id="plus btn" class="operator">+</button>
                 <!--            Row 4-->
-                <div id="zero"><p>0</p></div>
-                <div id="decimal"><p>.</p></div>
-                <div id="equal"><p>=</p></div>
+                <button type="button" id="zero" class="num-btn" value="0">0</button>
+                <button type="button" id="decimal btn" value=".">.</button>
+                <button type="button" id="equal btn" class="operator"> =</button>
             </div>
         </main>
-
     </div>
-
 </div>
+<script src="js/pretty-calc.js"></script>
 </body>
 </html>

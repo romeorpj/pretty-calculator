@@ -22,6 +22,7 @@ body {
     display: grid;
     align-items: center;
     justify-content: center;
+
 }
 P, li {
     font-size: 1.6rem;
@@ -29,4 +30,5 @@ P, li {
 :root{
     --dark-purp:#9088d2;
     --med-purp:#bcacd4;
+    --purp-2:#b2abe7;
 }

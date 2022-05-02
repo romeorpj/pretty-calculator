@@ -1,8 +1,9 @@
 svg{
     width: 405px;
-    position: relative ;
-    left: -30%;
-    top: -160px;
+    position: absolute ;
+    left: -15%;
+    top: -17%;
+    /*transform: translateX(50%);*/
 }
 
 #hanging-boot{
