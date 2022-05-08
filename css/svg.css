@@ -1,0 +1,52 @@
+svg{
+    width: 405px;
+    position: absolute ;
+    left: -15%;
+    top: -17%;
+    /*transform: translateX(50%);*/
+}
+
+#hanging-boot{
+    animation: swing 1.2s ease-in-out infinite alternate;
+    transform-origin: top right;
+    transform-box: fill-box;
+}
+
+@keyframes swing {
+    from{
+        transform: rotate(3deg);
+    }
+    to{
+        transform: rotate(-9deg);
+    }
+}
+
+#left-plant{
+    animation: sway1 1.2s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes sway1 {
+    from{
+        transform: rotate(1.5deg);
+    }
+    to{
+        transform: rotate(-1.5deg);
+    }
+}
+
+#right-plant{
+    animation: sway1 1s 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes sway1 {
+    from{
+        transform: rotate(1.5deg);
+    }
+    to{
+        transform: rotate(-1.5deg);
+    }
+}
