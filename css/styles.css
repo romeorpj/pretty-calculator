@@ -63,19 +63,29 @@ main{
     transition: transform 50ms ease-in-out;
 }
 .num_grid > button:active{
-    transform: scale(.9);
+    transform: scale(.9) translateY(5px);
+}
+.num_grid > button:hover{
+    background-color: rgba(188, 172, 212, 0.75);
+}
+.num-btn,button.operator,button.top-operators,.num_grid{
+    font-size: 2rem;
+    /*hacky, added numb grid here to keep cursor pointer from flashing back to arrow*/
+    cursor: pointer;
 
 }
 button.operator{
    background: var(--dark-purp);
-    font-size: 4rem;
 }
-button.operator p{
-    background: var(--dark-purp);
-    font-size: 1.9rem;
+button.operator:hover{
+    background: rgba(144, 136, 210, 0.75);
 }
+
 button.top-operators{
     background: var(--purp-2);
+}
+button.top-operators:hover{
+    background: rgba(178, 171, 231, 0.75);
 }
 #clear{
     grid-column-start: span 2;

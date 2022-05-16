@@ -4,16 +4,32 @@
 
 // let prevNum;
 let currNum;
+let inputArr = [];
 let numBtns = Array.from(document.querySelectorAll(".num-btn"));
 let numberDisplay = document.querySelector(".input-field");
+numberDisplay.value = "0";
 let deleteKey = document.querySelector("#delete");
 let clearDisplayBtn = document.querySelector("#clear");
 
 // function calls
+
+// FUNCTION DECLARATIONS
+
+
+let addMethod = ()=>{
+
+}
+
+
+// EVENT LISTENER FUNCTION DECLARATIONS
 function addClickedNumberToDisplay(e) {
     // input.value is the number in the input field
     // currNum = parseInt(numberDisplay.value += e.target.value);
     currNum = numberDisplay.value += e.target.value;
+    if(inputArr.length === 0){
+        inputArr.push(parseInt(currNum))
+    }
+
     console.log(parseInt(currNum));
     return parseInt(currNum);
 }
@@ -38,7 +54,9 @@ function clearAllNumbersFromDisplay(){
 
 }
 
-// eventlisteners
+
+
+// EVENT LISTENERS
 numBtns.forEach(numberButton => numberButton.addEventListener("click",addClickedNumberToDisplay));
 deleteKey.addEventListener("click",deleteLastNumberFromDisplay)
 clearDisplayBtn.addEventListener("click", clearAllNumbersFromDisplay)
