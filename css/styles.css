@@ -1,57 +1,96 @@
-.calculator{
-    width: 300px;
-    height: 645px;
-    border: black solid 1px;
-    border-radius: 25px;
+.calculator {
+    width: 100%;
+    max-width: 414px;
+    height: 100vh;
+    max-height: 896px;
+    /*border: black solid 1px;*/
+    /*border-radius: 0px;*/
     padding: 25px;
-    background-image: radial-gradient(at top right, #f2ecfa 8%,#f5f0fa 12%,#f7f6f9 80%);
+    background-image: radial-gradient(at top right, #f2ecfa 8%, #f5f0fa 12%, #f7f6f9 80%);
+    overflow: hidden;
     position: relative;
-    /*background-color: #f8f7f8;*/
-}
-#calc_container{
-    height: 100%;
-    /*position: relative;*/
 }
 
-h1{
+/*main{*/
+/*    !*height: 100%;*!*/
+/*    !*displ*!*/
+/*    margin-top: auto;*/
+/*}*/
+
+
+/*h1 {*/
+/*    !*place in 414 query*!*/
+/*    color: var(--dark-purp);*/
+/*    font-weight: 300;*/
+/*    letter-spacing: .89px;*/
+/*    font-size: 4rem;*/
+/*    line-height: 4.3rem;*/
+/*}*/
+h1 {
     color: var(--dark-purp);
     font-weight: 300;
     letter-spacing: .89px;
-    font-size: 2rem;
-    line-height: 2.3rem;
+    font-size: 2.5rem;
+    line-height: 2.7rem;
 }
-h1 span{
+
+h1 span {
     font-weight: 500;
-    font-size: 2.4rem;
+    font-size: 2.5rem;
 }
 
-main{
+/*TODO: INPUT BOX STYLING*/
+#display {
+    width: 100%;
+    height: 150px;
+    line-height: 240px;
+    padding: 5px;
+    text-align: right;
+    font-size: 3rem;
+    color: #272727;
+    background: transparent;
+    border-top: black 3px solid;
+    outline: none;
+    margin-bottom: auto;
+    position: relative;
+    z-index: 11;
+}
+
+
+/*TODO: BUTTON GROUP*/
+main {
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    /*left: 50%;*/
-    /*right: 25px;*/
-    /*transform: translateX(-50%);*/
-    /*margin-top: auto;*/
+    bottom: 25px;
+    left: 0;
+    right: 0;
 }
 
+#calc-organizer {
+    /*position: absolute;*/
+    /*bottom: 0px;*/
+    width: 90%;
+    margin: auto;
+}
 
-.num_grid{
+#btn-group {
     display: grid;
     /*height: 245px;*/
-    width: 270px;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows:repeat(5,1fr);
-    column-gap: 5px;
-    row-gap: 5px;
-    background-color: rgb(243, 243, 243);
+    /*width: 270px;*/
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:repeat(5, 1fr);
+    gap: 5px;
+    /*background-color: rgb(243, 243, 243);*/
     /*background-color: var(--med-purp);*/
-    padding-bottom: 20px;
-    border-radius:25px ;
-    /*place-items: center;*/
+    /*padding-bottom: 20px;*/
+    border-radius: 25px;
+    /*place-items: end;*/
+    /*position: relative;*/
+    /*bottom: 0;*/
 }
-.num_grid > button{
+
+
+/* TODO: BUTTON STYLING*/
+button {
     /*background-color: rgb(234, 234, 234);*/
     background-color: var(--med-purp);
     padding: 15px;
@@ -62,52 +101,113 @@ main{
     font-weight: 600;
     transition: transform 50ms ease-in-out;
 }
-.num_grid > button:active{
+
+button:active {
     transform: scale(.9) translateY(5px);
 }
-.num_grid > button:hover{
+
+button:hover {
     background-color: rgba(188, 172, 212, 0.75);
 }
-.num-btn,button.operator,button.top-operators,.num_grid{
+
+.num-btn, button.operator, button.top-operators, .num_grid {
     font-size: 2rem;
     /*hacky, added numb grid here to keep cursor pointer from flashing back to arrow*/
     cursor: pointer;
 
 }
-button.operator{
-   background: var(--dark-purp);
+
+button.operator {
+    background: var(--dark-purp);
 }
-button.operator:hover{
+
+button.operator:hover {
     background: rgba(144, 136, 210, 0.75);
 }
 
-button.top-operators{
+button.top-operators {
     background: var(--purp-2);
 }
-button.top-operators:hover{
+
+button.top-operators:hover {
     background: rgba(178, 171, 231, 0.75);
 }
-#clear{
-    grid-column-start: span 2;
-}
-#zero{
+
+#clear {
     grid-column-start: span 2;
 }
 
-/*TODO: INPUT BOX STYLING*/
-#curr_calculation{
-    width:100%;
-    height: 50px;
-/*display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-    padding: 5px;
-    text-align: right;
-    font-size: 3rem;
-    color: #272727;
-    background: transparent;
-    outline: none;
+#zero {
+    grid-column-start: span 2;
 }
-#curr_calculation::placeholder{
-    font-size: 3rem;
+
+
+/*main{*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    left: 50%;*/
+/*    transform: translateX(-50%);*/
+/*    !*left: 50%;*!*/
+/*    !*right: 25px;*!*/
+/*    !*transform: translateX(-50%);*!*/
+/*    !*margin-top: auto;*!*/
+/*}*/
+
+
+/*!*TODO: INPUT BOX STYLING*!*/
+/*#curr_calculation{*/
+/*    width:100%;*/
+/*    height: 50px;*/
+/*!*display: flex;*!*/
+/*!*    align-items: center;*!*/
+/*!*    justify-content: center;*!*/
+/*    padding: 5px;*/
+/*    text-align: right;*/
+/*    font-size: 3rem;*/
+/*    color: #272727;*/
+/*    background: transparent;*/
+/*    outline: none;*/
+/*}*/
+/*#curr_calculation::placeholder{*/
+/*    font-size: 3rem;*/
+/*}*/
+
+/*MEDIA QUERIES*/
+/*@media screen and (min-width: 360px) {*/
+/*    svg{*/
+/*        width: 255px;*/
+/*        right: -28%;*/
+/*        top: 15%;*/
+/*    }*/
+/*}*/
+/*@media screen and (min-width: 375px) {*/
+/*    svg{*/
+/*        width: 255px;*/
+/*        right: -30%;*/
+/*        top: 5%;*/
+/*    }*/
+/*}*/
+@media screen and (min-width: 390px) {
+    /*Increase title font @390pxW*/
+    h1 {
+        font-size: 4rem;
+        line-height: 4.3rem;
+    }
+    h1 span {
+        font-weight: 500;
+        font-size: 4rem;
+    }
+}
+@media screen and (min-width: 416px) {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .calculator {
+
+        /*border: black solid 1px;*/
+        border-radius: 25px;
+
+    }
 }
