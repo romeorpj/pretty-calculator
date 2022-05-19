@@ -1,9 +1,10 @@
 # pretty-calculator
 
 ## NOTES
-<<<<<<< HEAD
--javascript oop and classes
--
+my approach
+problems solved
+issues i had
+tech used
 
 ## OUTLINE
 - press num1 button - place into array
@@ -11,4 +12,3 @@
 - press num 2 add to numbers array
 - press equal to return calculation
 =======
->>>>>>> 2860527bf77ef293174b1f1e432b9370a68a2dbc

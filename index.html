@@ -143,11 +143,12 @@
     <main>
 
         <div id="calc-organizer">
-            <div id="display">5+5</div>
+            <div id="display"></div> <!--return pressed num here-->
             <div id="btn-group"> <!--controls-->
                 <!--            Row 1-->
                 <button type="button" id="clear" class="top-operators btn">clr</button>
-                <button type="button" id="delete" class="top-operators"><i class="fa-solid fa-arrow-left"></i>
+                <button type="button" id="delete" class="top-operators" value="del"><i
+                        class="fa-solid fa-arrow-left"></i>
                 </button>
                 <button type="button" id="divide" class="operator btn">/</button>
                 <!--            Row 2-->
@@ -168,7 +169,7 @@
                 <!--            Row 4-->
                 <button type="button" id="zero" class="num-btn" value="0">0</button>
                 <button type="button" id="decimal btn" class="num-btn" value=".">.</button>
-                <button type="button" id="equal btn" class="operator"> =</button>
+                <button type="button" id="equal btn" class="operator">=</button>
             </div>
         </div>
         <!--            <input type="text" id="curr_calculation" class="input-field" >-->
