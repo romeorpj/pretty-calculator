@@ -18,6 +18,14 @@ const runCalculations = () => {
     firstNum = parseFloat(firstNum);
     secondNum = parseFloat(secondNum);
 
+
+
+
+
+    // if(operator === "del" && ){
+    //     display.textContent = (display.textContent).substring(0,display.textContent.length - 1);
+    //     console.log("this is delete")
+    // }
     if(operator === "+") result = firstNum + secondNum;
     if(operator === "-") result = firstNum - secondNum;
     if(operator === "x") result = firstNum * secondNum;
@@ -53,6 +61,12 @@ for(let button of buttons){
             return display.textContent = "";
 
         }
+
+        if(buttonValue === "del"){
+            display.textContent = (display.textContent).substring(0,display.textContent.length - 1);
+            return null;
+            // console.log("this is delete")
+        }
         //set operator to buttonvalue when button is clicked if firstNum and isButton...
         //otherwise, if no operator, set firstNum to buttonValue
         //otherwise if operator, set secondNum to buttonvalue
@@ -66,25 +80,25 @@ for(let button of buttons){
             operator = buttonValue;
         }
 
-        else if(!operator) firstNum += buttonValue;
+        else if(!operator ) firstNum += buttonValue;
         else if(operator) secondNum += buttonValue;
 
         //updates display with new numbers and operators, if not = sign
         //because we dont want to see the = sign
-        if(buttonValue !== "=" && valAttribute !== "del") display.textContent += buttonValue;
+        if(buttonValue !== "=" ) display.textContent += buttonValue;
         // if(firstNum && secondNum && operator && buttonValue === "=") display.textContent += result;
         // else if(buttonValue !== "=" && operator) secondNum += buttonValue;
         // if(firstNum && isButtonValueOperator && operator) display.textContent += buttonValue;
 
         //DELETE FUNCTION
-        if(valAttribute === "del"){
-           display.textContent = display.textContent.substring(0,display.textContent - 1);
-            console.log(display.textContent)
-        }
+        // if(valAttribute === "del"){
+        //    display.textContent = display.textContent.substring(0,display.textContent - 1);
+        //     console.log(display.textContent)
+        // }
         console.log(`this is firstnum:${typeof firstNum} ${firstNum}`)
         console.log(`this is operator:${typeof operator} ${operator}`)
         console.log(`this is secondnum:${typeof secondNum} ${secondNum}`)
-        // console.log(display.textContent.length)
+        console.log(typeof display.textContent)
     })
 }
 
