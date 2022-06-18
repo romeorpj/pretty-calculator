@@ -18,14 +18,6 @@ const runCalculations = () => {
     firstNum = parseFloat(firstNum);
     secondNum = parseFloat(secondNum);
 
-
-
-
-
-    // if(operator === "del" && ){
-    //     display.textContent = (display.textContent).substring(0,display.textContent.length - 1);
-    //     console.log("this is delete")
-    // }
     if(operator === "+") result = firstNum + secondNum;
     if(operator === "-") result = firstNum - secondNum;
     if(operator === "x") result = firstNum * secondNum;
@@ -41,6 +33,7 @@ const runCalculations = () => {
 }
 
 
+
 for(let button of buttons){
     button.addEventListener("click", () => {
         //Destructuring, because unpacking is fun
@@ -53,10 +46,6 @@ for(let button of buttons){
 
 
         if(buttonValue === "clr"){
-            // operator = "";
-            // firstNum = "";
-            // secondNum = "";
-            // result = "";
             firstNum = secondNum = operator = result = "";
             return display.textContent = "";
 
@@ -76,6 +65,10 @@ for(let button of buttons){
             // if(secondNum){
             //     runCalculations();
             // }
+
+
+            
+            // logical and
             secondNum && runCalculations();
             operator = buttonValue;
         }

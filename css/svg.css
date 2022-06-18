@@ -1,99 +1,91 @@
-svg{
-    width: 255px;
-    position: relative;
-    right: -8%;
-    top: 2.5%;
-    z-index: 22;
+svg {
+	width: 255px;
+	position: relative;
+	right: -8%;
+	top: 2.5%;
+	z-index: 22;
 }
-/*svg{*/
-/*    !*place in 414 query*!*/
-/*    width: 405px;*/
-/*    position: relative;*/
-/*    right: 52%;*/
-/*    top: 19.8%;*/
-/*    transform: translateX(50%);*/
-/*}*/
-#hanging-boot{
-    animation: swing 1.2s ease-in-out infinite alternate;
-    transform-origin: top right;
-    transform-box: fill-box;
+
+#hanging-boot {
+	animation: swing 1.2s ease-in-out infinite alternate;
+	transform-origin: top right;
+	transform-box: fill-box;
 }
 
 @keyframes swing {
-    from{
-        transform: rotate(3deg);
-    }
-    to{
-        transform: rotate(-9deg);
-    }
+	from {
+		transform: rotate(3deg);
+	}
+	to {
+		transform: rotate(-9deg);
+	}
 }
 
-#left-plant{
-    animation: sway1 1.2s ease-in-out infinite alternate;
-    transform-origin: bottom;
-    transform-box: fill-box;
-}
-
-@keyframes sway1 {
-    from{
-        transform: rotate(1.5deg);
-    }
-    to{
-        transform: rotate(-1.5deg);
-    }
-}
-
-#right-plant{
-    animation: sway1 1s 1s ease-in-out infinite alternate;
-    transform-origin: bottom;
-    transform-box: fill-box;
+#left-plant {
+	animation: sway1 1.2s ease-in-out infinite alternate;
+	transform-origin: bottom;
+	transform-box: fill-box;
 }
 
 @keyframes sway1 {
-    from{
-        transform: rotate(1.5deg);
-    }
-    to{
-        transform: rotate(-1.5deg);
-    }
+	from {
+		transform: rotate(1.5deg);
+	}
+	to {
+		transform: rotate(-1.5deg);
+	}
 }
 
+#right-plant {
+	animation: sway1 1s 1s ease-in-out infinite alternate;
+	transform-origin: bottom;
+	transform-box: fill-box;
+}
+
+@keyframes sway1 {
+	from {
+		transform: rotate(1.5deg);
+	}
+	to {
+		transform: rotate(-1.5deg);
+	}
+}
 
 /*MEDIA QUERIES*/
 @media screen and (min-width: 360px) {
-    svg{
-        width: 255px;
-        right: -28%;
-        top: 15%;
-    }
+	svg {
+		width: 255px;
+		right: -28%;
+		top: 15%;
+	}
 }
 @media screen and (min-width: 375px) {
-    svg{
-        width: 255px;
-        right: -30%;
-        top: 5%;
-    }
+	svg {
+		width: 255px;
+		right: -30%;
+		top: 5%;
+	}
 }
 @media screen and (min-width: 390px) {
-    svg{
-        width: 350px;
-        right: -4%;
-        top: 17.5%;
-    }
+	svg {
+		width: 350px;
+		right: -4%;
+		top: 17.5%;
+	}
 }
 @media screen and (min-width: 393px) {
-    svg{
-        top: 18%;
-    }
+	svg {
+		top: 18%;
+	}
 }
 @media screen and (min-width: 412px) {
-    svg{
-        right: -7%;
-        top: 24%;
-    }
-@media screen and (min-width: 414px) {
-    svg{
-        top: 22.3%;
-    }
-}
+	svg {
+		right: -7%;
+		top: 24%;
+	}
+	@media screen and (min-width: 414px) {
+		svg {
+			top: 22.3%;
+		}
+	}
 }
