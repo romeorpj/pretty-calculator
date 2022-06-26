@@ -53,6 +53,7 @@ main {
 }
 
 #calc-organizer {
+	padding: 25px 25px 0 25px;
 	margin: auto;
 }
 
@@ -135,7 +136,7 @@ button.top-operators:hover {
 	.calculator {
 		border: rgba(188, 172, 212, 0.15) solid 2px;
 		border-radius: 25px;
-		box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
-			rgba(0, 0, 0, 0.05) 0px 5px 10px;
+		box-shadow: rgba(0, 0, 0, 0.15) 0 15px 25px,
+			rgba(0, 0, 0, 0.05) 0 5px 10px;
 	}
 }
